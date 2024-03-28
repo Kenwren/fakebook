@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir ="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ="author" content = "Gabe">
+    <meta name = "description" content = "Webpage">
+    <meta name = "keywords" content ="html, css, web, web development, javascript">
+    <link rel = "icon" href ="./assets/img/favicon.png?v=2" type = "/x-icon">
+    <title>Fakebook</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./assets/style/reset.css"> -->
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <script type ="module" src="./assets/script/script.js" defer></script>
+    <script type ="module" src="./assets/script/classes.js" defer></script>
+    <script type ="module" src="./assets/script/utils.js" defer></script>
+  </head>
+  <body>
+    <header>
+        <nav>
+            <div class="container">
+                <h2 class="logo">
+                    Fakebook
+                </h2>
+                <div class="search-bar">
+                    <i class="uil uil-search"></i>
+                    <input type="search" placeholder="Search for creators, inspirations, and projects">
+                </div>
+                <div class="create">
+                    <button type="button" id="modal-button" class="btn btn-primarypop-button pop">Account</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Pop Up Modal -->
+    <div class="popup" id="modal">
+      <h2 class="popup-name">Gabe</h2>
+      <!-- <button type="button" id="close-modal">X</button> -->
+      <img class="popup-picture" src="assets/img/profile-1.jpg">
+      <h2 class="popup-email">g@fakemail.com</h2>
+    </div>
+    <main>
+      <div class="container">
+          <!----------------- MIDDLE -------------------->
+          <div class="middle">
+              <form action="" class="create-post">
+                  <div class="profile-photo">
+                    <img src="./assets/img/profile-1.jpg" alt="">
+                  </div>
+                  <!-- <input type="text" placeholder="What's on your mind?" id="create-post"> -->
+                  <textarea placeholder="What's on your mind?">
+                  </textarea>
+                  <!----------------- buttons -------------------->
+                  <div class="post-buttons">
+                    <input type="file" id="select-pic" class="" accept="image/*" />
+                  </div>
+                  <div class="bottom">
+                    <button type="button" class="post-button btn btn-primary">Post</button>
+                  </div>
+              </form>
+              <div class="feeds display-area"></div>
+          </div>
+        </div>
+    </main>
+  </body>
+</html>
